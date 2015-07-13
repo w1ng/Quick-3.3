@@ -1993,17 +1993,28 @@
 		ED9C6A9518599AD8000A5232 /* CCNodeGrid.cpp in Sources */ = {isa = PBXBuildFile; fileRef = ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */; };
 		ED9C6A9618599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
 		ED9C6A9718599AD8000A5232 /* CCNodeGrid.h in Headers */ = {isa = PBXBuildFile; fileRef = ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */; };
-		F6C5B1811B4B7E0800B3BD67 /* TTFConfigLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C5B17F1B4B7E0800B3BD67 /* TTFConfigLoader.cpp */; };
-		F6C5B1821B4B7E0800B3BD67 /* TTFConfigLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C5B1801B4B7E0800B3BD67 /* TTFConfigLoader.h */; };
-		F6C5B1851B4B852500B3BD67 /* CCRepeat9SpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C5B1831B4B852500B3BD67 /* CCRepeat9SpriteLoader.cpp */; };
-		F6C5B1861B4B852500B3BD67 /* CCRepeat9SpriteLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C5B1841B4B852500B3BD67 /* CCRepeat9SpriteLoader.h */; };
-		F6C5B18D1B4B86C400B3BD67 /* Repeat9Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C5B1881B4B86C400B3BD67 /* Repeat9Sprite.cpp */; };
-		F6C5B18E1B4B86C400B3BD67 /* Repeat9Sprite.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C5B1891B4B86C400B3BD67 /* Repeat9Sprite.h */; };
-		F6C5B18F1B4B86C400B3BD67 /* RepeatEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C5B18A1B4B86C400B3BD67 /* RepeatEnum.h */; };
-		F6C5B1901B4B86C400B3BD67 /* RepeatNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C5B18B1B4B86C400B3BD67 /* RepeatNode.cpp */; };
-		F6C5B1911B4B86C400B3BD67 /* RepeatNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C5B18C1B4B86C400B3BD67 /* RepeatNode.h */; };
-		F6C5B1941B4B88A400B3BD67 /* CCControlButtonBMFontLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6C5B1921B4B88A400B3BD67 /* CCControlButtonBMFontLoader.cpp */; };
-		F6C5B1951B4B88A400B3BD67 /* CCControlButtonBMFontLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6C5B1931B4B88A400B3BD67 /* CCControlButtonBMFontLoader.h */; };
+		F6D273201B535C49007188B8 /* CCControlButtonBMFontLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2731A1B535C49007188B8 /* CCControlButtonBMFontLoader.cpp */; };
+		F6D273211B535C49007188B8 /* CCControlButtonBMFontLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2731A1B535C49007188B8 /* CCControlButtonBMFontLoader.cpp */; };
+		F6D273221B535C49007188B8 /* CCControlButtonBMFontLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2731B1B535C49007188B8 /* CCControlButtonBMFontLoader.h */; };
+		F6D273231B535C49007188B8 /* CCControlButtonBMFontLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2731B1B535C49007188B8 /* CCControlButtonBMFontLoader.h */; };
+		F6D273241B535C49007188B8 /* CCRepeat9SpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2731C1B535C49007188B8 /* CCRepeat9SpriteLoader.cpp */; };
+		F6D273251B535C49007188B8 /* CCRepeat9SpriteLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2731C1B535C49007188B8 /* CCRepeat9SpriteLoader.cpp */; };
+		F6D273261B535C49007188B8 /* CCRepeat9SpriteLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2731D1B535C49007188B8 /* CCRepeat9SpriteLoader.h */; };
+		F6D273271B535C49007188B8 /* CCRepeat9SpriteLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2731D1B535C49007188B8 /* CCRepeat9SpriteLoader.h */; };
+		F6D273281B535C49007188B8 /* TTFConfigLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2731E1B535C49007188B8 /* TTFConfigLoader.cpp */; };
+		F6D273291B535C49007188B8 /* TTFConfigLoader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2731E1B535C49007188B8 /* TTFConfigLoader.cpp */; };
+		F6D2732A1B535C49007188B8 /* TTFConfigLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2731F1B535C49007188B8 /* TTFConfigLoader.h */; };
+		F6D2732B1B535C49007188B8 /* TTFConfigLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2731F1B535C49007188B8 /* TTFConfigLoader.h */; };
+		F6D273311B535D4E007188B8 /* Repeat9Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2732C1B535D4E007188B8 /* Repeat9Sprite.cpp */; };
+		F6D273321B535D4E007188B8 /* Repeat9Sprite.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2732C1B535D4E007188B8 /* Repeat9Sprite.cpp */; };
+		F6D273331B535D4E007188B8 /* Repeat9Sprite.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2732D1B535D4E007188B8 /* Repeat9Sprite.h */; };
+		F6D273341B535D4E007188B8 /* Repeat9Sprite.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2732D1B535D4E007188B8 /* Repeat9Sprite.h */; };
+		F6D273351B535D4E007188B8 /* RepeatEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2732E1B535D4E007188B8 /* RepeatEnum.h */; };
+		F6D273361B535D4E007188B8 /* RepeatEnum.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D2732E1B535D4E007188B8 /* RepeatEnum.h */; };
+		F6D273371B535D4E007188B8 /* RepeatNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2732F1B535D4E007188B8 /* RepeatNode.cpp */; };
+		F6D273381B535D4E007188B8 /* RepeatNode.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F6D2732F1B535D4E007188B8 /* RepeatNode.cpp */; };
+		F6D273391B535D4E007188B8 /* RepeatNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D273301B535D4E007188B8 /* RepeatNode.h */; };
+		F6D2733A1B535D4E007188B8 /* RepeatNode.h in Headers */ = {isa = PBXBuildFile; fileRef = F6D273301B535D4E007188B8 /* RepeatNode.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -3098,17 +3109,17 @@
 		DABC9FA819E7DFA900FA252C /* CCClippingRectangleNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCClippingRectangleNode.h; sourceTree = "<group>"; };
 		ED9C6A9218599AD8000A5232 /* CCNodeGrid.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; lineEnding = 0; path = CCNodeGrid.cpp; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.cpp; };
 		ED9C6A9318599AD8000A5232 /* CCNodeGrid.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCNodeGrid.h; sourceTree = "<group>"; };
-		F6C5B17F1B4B7E0800B3BD67 /* TTFConfigLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TTFConfigLoader.cpp; sourceTree = "<group>"; };
-		F6C5B1801B4B7E0800B3BD67 /* TTFConfigLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFConfigLoader.h; sourceTree = "<group>"; };
-		F6C5B1831B4B852500B3BD67 /* CCRepeat9SpriteLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCRepeat9SpriteLoader.cpp; sourceTree = "<group>"; };
-		F6C5B1841B4B852500B3BD67 /* CCRepeat9SpriteLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRepeat9SpriteLoader.h; sourceTree = "<group>"; };
-		F6C5B1881B4B86C400B3BD67 /* Repeat9Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Repeat9Sprite.cpp; sourceTree = "<group>"; };
-		F6C5B1891B4B86C400B3BD67 /* Repeat9Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repeat9Sprite.h; sourceTree = "<group>"; };
-		F6C5B18A1B4B86C400B3BD67 /* RepeatEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatEnum.h; sourceTree = "<group>"; };
-		F6C5B18B1B4B86C400B3BD67 /* RepeatNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RepeatNode.cpp; sourceTree = "<group>"; };
-		F6C5B18C1B4B86C400B3BD67 /* RepeatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatNode.h; sourceTree = "<group>"; };
-		F6C5B1921B4B88A400B3BD67 /* CCControlButtonBMFontLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCControlButtonBMFontLoader.cpp; sourceTree = "<group>"; };
-		F6C5B1931B4B88A400B3BD67 /* CCControlButtonBMFontLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlButtonBMFontLoader.h; sourceTree = "<group>"; };
+		F6D2731A1B535C49007188B8 /* CCControlButtonBMFontLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCControlButtonBMFontLoader.cpp; sourceTree = "<group>"; };
+		F6D2731B1B535C49007188B8 /* CCControlButtonBMFontLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCControlButtonBMFontLoader.h; sourceTree = "<group>"; };
+		F6D2731C1B535C49007188B8 /* CCRepeat9SpriteLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = CCRepeat9SpriteLoader.cpp; sourceTree = "<group>"; };
+		F6D2731D1B535C49007188B8 /* CCRepeat9SpriteLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCRepeat9SpriteLoader.h; sourceTree = "<group>"; };
+		F6D2731E1B535C49007188B8 /* TTFConfigLoader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = TTFConfigLoader.cpp; sourceTree = "<group>"; };
+		F6D2731F1B535C49007188B8 /* TTFConfigLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TTFConfigLoader.h; sourceTree = "<group>"; };
+		F6D2732C1B535D4E007188B8 /* Repeat9Sprite.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Repeat9Sprite.cpp; sourceTree = "<group>"; };
+		F6D2732D1B535D4E007188B8 /* Repeat9Sprite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Repeat9Sprite.h; sourceTree = "<group>"; };
+		F6D2732E1B535D4E007188B8 /* RepeatEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatEnum.h; sourceTree = "<group>"; };
+		F6D2732F1B535D4E007188B8 /* RepeatNode.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = RepeatNode.cpp; sourceTree = "<group>"; };
+		F6D273301B535D4E007188B8 /* RepeatNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RepeatNode.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -4066,12 +4077,12 @@
 		1AD71CF8180E26E600808F54 /* cocosbuilder */ = {
 			isa = PBXGroup;
 			children = (
-				F6C5B1921B4B88A400B3BD67 /* CCControlButtonBMFontLoader.cpp */,
-				F6C5B1931B4B88A400B3BD67 /* CCControlButtonBMFontLoader.h */,
-				F6C5B1831B4B852500B3BD67 /* CCRepeat9SpriteLoader.cpp */,
-				F6C5B1841B4B852500B3BD67 /* CCRepeat9SpriteLoader.h */,
-				F6C5B17F1B4B7E0800B3BD67 /* TTFConfigLoader.cpp */,
-				F6C5B1801B4B7E0800B3BD67 /* TTFConfigLoader.h */,
+				F6D2731A1B535C49007188B8 /* CCControlButtonBMFontLoader.cpp */,
+				F6D2731B1B535C49007188B8 /* CCControlButtonBMFontLoader.h */,
+				F6D2731C1B535C49007188B8 /* CCRepeat9SpriteLoader.cpp */,
+				F6D2731D1B535C49007188B8 /* CCRepeat9SpriteLoader.h */,
+				F6D2731E1B535C49007188B8 /* TTFConfigLoader.cpp */,
+				F6D2731F1B535C49007188B8 /* TTFConfigLoader.h */,
 				1AD71CFA180E26E600808F54 /* CCBAnimationManager.cpp */,
 				1AD71CFB180E26E600808F54 /* CCBAnimationManager.h */,
 				1AD71CFC180E26E600808F54 /* CCBFileLoader.cpp */,
@@ -5315,11 +5326,11 @@
 		F6C5B1871B4B86C400B3BD67 /* RepeatNode */ = {
 			isa = PBXGroup;
 			children = (
-				F6C5B1881B4B86C400B3BD67 /* Repeat9Sprite.cpp */,
-				F6C5B1891B4B86C400B3BD67 /* Repeat9Sprite.h */,
-				F6C5B18A1B4B86C400B3BD67 /* RepeatEnum.h */,
-				F6C5B18B1B4B86C400B3BD67 /* RepeatNode.cpp */,
-				F6C5B18C1B4B86C400B3BD67 /* RepeatNode.h */,
+				F6D2732C1B535D4E007188B8 /* Repeat9Sprite.cpp */,
+				F6D2732D1B535D4E007188B8 /* Repeat9Sprite.h */,
+				F6D2732E1B535D4E007188B8 /* RepeatEnum.h */,
+				F6D2732F1B535D4E007188B8 /* RepeatNode.cpp */,
+				F6D273301B535D4E007188B8 /* RepeatNode.h */,
 			);
 			path = RepeatNode;
 			sourceTree = "<group>";
@@ -5361,7 +5372,6 @@
 				15AE180A19AAD2F700C27E9E /* CCAABB.h in Headers */,
 				46A170E71807CECA005B8026 /* CCPhysicsBody.h in Headers */,
 				87EB6E441A441CA0009135D3 /* atomicops_internals_pnacl.h in Headers */,
-				F6C5B18E1B4B86C400B3BD67 /* Repeat9Sprite.h in Headers */,
 				15AE1A5A19AAD40300C27E9E /* b2StackAllocator.h in Headers */,
 				B29A7E3119EE1B7700872B35 /* SkinnedMeshAttachment.h in Headers */,
 				15AE1B6F19AADA9900C27E9E /* GUIDefine.h in Headers */,
@@ -5398,6 +5408,7 @@
 				50ABBEC11925AB6F00A911A9 /* CCValue.h in Headers */,
 				87EB6E571A441CA0009135D3 /* wire_format_lite.h in Headers */,
 				B276EF631988D1D500CD400F /* CCVertexIndexBuffer.h in Headers */,
+				F6D2732A1B535C49007188B8 /* TTFConfigLoader.h in Headers */,
 				B29A7DE519EE1B7700872B35 /* SkeletonAnimation.h in Headers */,
 				87EB6E501A441CA0009135D3 /* stl_util.h in Headers */,
 				50ABBE871925AB6F00A911A9 /* ccMacros.h in Headers */,
@@ -5418,8 +5429,10 @@
 				1A570073180BC5A10088DEC7 /* CCActionGrid.h in Headers */,
 				15AE1BCC19AAE01E00C27E9E /* CCControlButton.h in Headers */,
 				5034CA3B191D591100CE6051 /* ccShader_PositionColor.vert in Headers */,
+				F6D273391B535D4E007188B8 /* RepeatNode.h in Headers */,
 				1A570077180BC5A10088DEC7 /* CCActionGrid3D.h in Headers */,
 				1A57007B180BC5A10088DEC7 /* CCActionInstant.h in Headers */,
+				F6D273261B535C49007188B8 /* CCRepeat9SpriteLoader.h in Headers */,
 				15AE182A19AAD2F700C27E9E /* CCMeshSkin.h in Headers */,
 				B276EF5F1988D1D500CD400F /* CCVertexIndexData.h in Headers */,
 				1A57007F180BC5A10088DEC7 /* CCActionInterval.h in Headers */,
@@ -5444,6 +5457,7 @@
 				50ABBEA11925AB6F00A911A9 /* CCScheduler.h in Headers */,
 				15AE1B6219AADA9900C27E9E /* UIButton.h in Headers */,
 				50ABBDB71925AB4100A911A9 /* CCTexture2D.h in Headers */,
+				F6D273331B535D4E007188B8 /* Repeat9Sprite.h in Headers */,
 				50ABBE811925AB6F00A911A9 /* CCEventType.h in Headers */,
 				1A57008F180BC5A10088DEC7 /* CCActionTiledGrid.h in Headers */,
 				15AE19A319AAD39600C27E9E /* TextBMFontReader.h in Headers */,
@@ -5488,6 +5502,7 @@
 				1A57019F180BCB590088DEC7 /* CCFont.h in Headers */,
 				DA8C62A419E52C6400000516 /* ioapi_mem.h in Headers */,
 				87EB6E551A441CA0009135D3 /* wire_format_lite_inl.h in Headers */,
+				F6D273221B535C49007188B8 /* CCControlButtonBMFontLoader.h in Headers */,
 				1A5701A3180BCB590088DEC7 /* CCFontAtlas.h in Headers */,
 				15AE18E919AAD35000C27E9E /* CCActionManagerEx.h in Headers */,
 				1A01C68618F57BE800EFE3A6 /* CCArray.h in Headers */,
@@ -5525,7 +5540,6 @@
 				5034CA37191D591100CE6051 /* ccShader_PositionColorLengthTexture.vert in Headers */,
 				15AE1B6419AADA9900C27E9E /* UICheckBox.h in Headers */,
 				1A5701CD180BCB5A0088DEC7 /* CCLabelTTF.h in Headers */,
-				F6C5B18F1B4B86C400B3BD67 /* RepeatEnum.h in Headers */,
 				15AE1A3319AAD3D500C27E9E /* b2CircleShape.h in Headers */,
 				1A5701E0180BCB8C0088DEC7 /* CCLayer.h in Headers */,
 				1A5701E4180BCB8C0088DEC7 /* CCScene.h in Headers */,
@@ -5542,7 +5556,6 @@
 				15AE189919AAD33D00C27E9E /* CCMenuItemLoader.h in Headers */,
 				15AE1B5E19AADA9900C27E9E /* UITextBMFont.h in Headers */,
 				15AE18E719AAD35000C27E9E /* CCActionFrameEasing.h in Headers */,
-				F6C5B1861B4B852500B3BD67 /* CCRepeat9SpriteLoader.h in Headers */,
 				1A5701E8180BCB8C0088DEC7 /* CCTransition.h in Headers */,
 				1A5701EC180BCB8C0088DEC7 /* CCTransitionPageTurn.h in Headers */,
 				15AE196F19AAD35700C27E9E /* CCActionTimelineCache.h in Headers */,
@@ -5696,7 +5709,6 @@
 				15AE191619AAD35000C27E9E /* CCSkin.h in Headers */,
 				50ABC0651926664800A911A9 /* CCGL-mac.h in Headers */,
 				50643BD419BFAECF00EF68ED /* CCGL.h in Headers */,
-				F6C5B1951B4B88A400B3BD67 /* CCControlButtonBMFontLoader.h in Headers */,
 				15AE190C19AAD35000C27E9E /* CCDisplayFactory.h in Headers */,
 				B37510751823AC9F00B3BA6A /* CCPhysicsHelper_chipmunk.h in Headers */,
 				15AE1A8B19AAD40300C27E9E /* b2PulleyJoint.h in Headers */,
@@ -5709,7 +5721,6 @@
 				1A01C69418F57BE800EFE3A6 /* CCFloat.h in Headers */,
 				1A57034D180BD09B0088DEC7 /* tinyxml2.h in Headers */,
 				15AE18F519AAD35000C27E9E /* CCArmatureDefine.h in Headers */,
-				F6C5B1821B4B7E0800B3BD67 /* TTFConfigLoader.h in Headers */,
 				15AE188219AAD33D00C27E9E /* CCBReader.h in Headers */,
 				1A570356180BD0B00088DEC7 /* ioapi.h in Headers */,
 				15AE191819AAD35000C27E9E /* CCSpriteFrameCacheHelper.h in Headers */,
@@ -5848,6 +5859,7 @@
 				B29A7E3519EE1B7700872B35 /* AnimationStateData.h in Headers */,
 				15AE1BC619AAE00000C27E9E /* AssetsManager.h in Headers */,
 				50ABBEA91925AB6F00A911A9 /* CCTouch.h in Headers */,
+				F6D273351B535D4E007188B8 /* RepeatEnum.h in Headers */,
 				15AE1A5E19AAD40300C27E9E /* b2Body.h in Headers */,
 				87EB6E421A441CA0009135D3 /* atomicops_internals_macosx.h in Headers */,
 				50ABBE971925AB6F00A911A9 /* CCProtocols.h in Headers */,
@@ -5859,7 +5871,6 @@
 				15AE183E19AAD2F700C27E9E /* CCSkeleton3D.h in Headers */,
 				3EACC9A219F5014D00EB3C5E /* CCCamera.h in Headers */,
 				50ABBECD1925AB6F00A911A9 /* s3tc.h in Headers */,
-				F6C5B1911B4B86C400B3BD67 /* RepeatNode.h in Headers */,
 				15AE1BD119AAE01E00C27E9E /* CCControlHuePicker.h in Headers */,
 				50ABBE771925AB6F00A911A9 /* CCEventListenerTouch.h in Headers */,
 				5034CA33191D591100CE6051 /* ccShader_PositionTexture_uColor.frag in Headers */,
@@ -6103,6 +6114,7 @@
 				1A5701E5180BCB8C0088DEC7 /* CCScene.h in Headers */,
 				1A5701E9180BCB8C0088DEC7 /* CCTransition.h in Headers */,
 				15AE198F19AAD36E00C27E9E /* CheckBoxReader.h in Headers */,
+				F6D2733A1B535D4E007188B8 /* RepeatNode.h in Headers */,
 				382384011A258FA7002C4610 /* util.h in Headers */,
 				50ABBED41925AB6F00A911A9 /* uthash.h in Headers */,
 				B29A7E0A19EE1B7700872B35 /* AttachmentLoader.h in Headers */,
@@ -6199,6 +6211,7 @@
 				15AE197819AAD35700C27E9E /* CCActionTimeline.h in Headers */,
 				15AE1AA019AAD40300C27E9E /* b2Timer.h in Headers */,
 				5034CA44191D591100CE6051 /* ccShader_Label.vert in Headers */,
+				F6D2732B1B535C49007188B8 /* TTFConfigLoader.h in Headers */,
 				1A5702F5180BCE750088DEC7 /* CCTMXObjectGroup.h in Headers */,
 				1A5702F9180BCE750088DEC7 /* CCTMXTiledMap.h in Headers */,
 				15B3707F19EE414C00ABE682 /* CCEventAssetsManagerEx.h in Headers */,
@@ -6227,6 +6240,7 @@
 				15AE1BFE19AAE01E00C27E9E /* CCInvocation.h in Headers */,
 				15AE1A9E19AAD40300C27E9E /* b2StackAllocator.h in Headers */,
 				1A570357180BD0B00088DEC7 /* ioapi.h in Headers */,
+				F6D273271B535C49007188B8 /* CCRepeat9SpriteLoader.h in Headers */,
 				50ABBD4B1925AB0000A911A9 /* Mat4.h in Headers */,
 				15AE1BBE19AADFF000C27E9E /* SocketIO.h in Headers */,
 				1A01C69B18F57BE800EFE3A6 /* CCSet.h in Headers */,
@@ -6268,6 +6282,7 @@
 				5027253B190BF1B900AAF4ED /* cocos2d.h in Headers */,
 				15AE1A9719AAD40300C27E9E /* b2Draw.h in Headers */,
 				3E6176691960F89B00DE83F5 /* CCController.h in Headers */,
+				F6D273231B535C49007188B8 /* CCControlButtonBMFontLoader.h in Headers */,
 				3823841D1A2590D2002C4610 /* ComAudioReader.h in Headers */,
 				3E6176781960F89B00DE83F5 /* CCGameController.h in Headers */,
 				15AE19BB19AAD39700C27E9E /* TextReader.h in Headers */,
@@ -6288,6 +6303,7 @@
 				1ABA68B11888D700007D1BB4 /* CCFontCharMap.h in Headers */,
 				15AE1ACF19AAD40300C27E9E /* b2PulleyJoint.h in Headers */,
 				15AE198019AAD35700C27E9E /* CCTimeLine.h in Headers */,
+				F6D273341B535D4E007188B8 /* Repeat9Sprite.h in Headers */,
 				38B8E2E419E671D2002D7CE7 /* UILayoutComponent.h in Headers */,
 				50ABBD4F1925AB0000A911A9 /* MathUtil.h in Headers */,
 				1A01C69718F57BE800EFE3A6 /* CCInteger.h in Headers */,
@@ -6385,6 +6401,7 @@
 				15AE1A4619AAD3D500C27E9E /* b2TimeOfImpact.h in Headers */,
 				50ABBE601925AB6F00A911A9 /* CCEventListener.h in Headers */,
 				50ABBEB21925AB6F00A911A9 /* CCUserDefault.h in Headers */,
+				F6D273361B535D4E007188B8 /* RepeatEnum.h in Headers */,
 				15AE198B19AAD36A00C27E9E /* ButtonReader.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -6572,6 +6589,7 @@
 				B257B460198A353E00D9A687 /* CCPrimitiveCommand.cpp in Sources */,
 				15AE19A419AAD39600C27E9E /* TextFieldReader.cpp in Sources */,
 				50ED2BDB19BE76D500A0AB90 /* UIVideoPlayer-ios.mm in Sources */,
+				F6D273371B535D4E007188B8 /* RepeatNode.cpp in Sources */,
 				15AE1B5F19AADA9900C27E9E /* UITextField.cpp in Sources */,
 				87EB6E2D1A441CA0009135D3 /* extension_set.cc in Sources */,
 				15AE187C19AAD33D00C27E9E /* CCBFileLoader.cpp in Sources */,
@@ -6622,11 +6640,11 @@
 				1A5701B9180BCB5A0088DEC7 /* CCLabel.cpp in Sources */,
 				1A5701BD180BCB5A0088DEC7 /* CCLabelAtlas.cpp in Sources */,
 				15AE1B5319AADA9900C27E9E /* UIRichText.cpp in Sources */,
+				F6D273201B535C49007188B8 /* CCControlButtonBMFontLoader.cpp in Sources */,
 				292DB13D19B4574100A80320 /* UIEditBox.cpp in Sources */,
 				50ABBE551925AB6F00A911A9 /* CCEventFocus.cpp in Sources */,
 				15AE1A8819AAD40300C27E9E /* b2PrismaticJoint.cpp in Sources */,
 				50ABBE491925AB6F00A911A9 /* CCEventAcceleration.cpp in Sources */,
-				F6C5B1941B4B88A400B3BD67 /* CCControlButtonBMFontLoader.cpp in Sources */,
 				3823843D1A259140002C4610 /* SingleNodeReader.cpp in Sources */,
 				1A5701C1180BCB5A0088DEC7 /* CCLabelBMFont.cpp in Sources */,
 				15AE182C19AAD2F700C27E9E /* CCMeshVertexIndexData.cpp in Sources */,
@@ -6669,9 +6687,7 @@
 				B29A7DD119EE1B7700872B35 /* Skin.c in Sources */,
 				1A5701FB180BCBAD0088DEC7 /* CCMenuItem.cpp in Sources */,
 				1A570202180BCBD40088DEC7 /* CCClippingNode.cpp in Sources */,
-				F6C5B1901B4B86C400B3BD67 /* RepeatNode.cpp in Sources */,
 				1A570208180BCBDF0088DEC7 /* CCMotionStreak.cpp in Sources */,
-				F6C5B18D1B4B86C400B3BD67 /* Repeat9Sprite.cpp in Sources */,
 				1A570210180BCBF40088DEC7 /* CCProgressTimer.cpp in Sources */,
 				292DB15F19B461CA00A80320 /* ExtensionDeprecated.cpp in Sources */,
 				292DB14D19B4574100A80320 /* UIEditBoxImpl-mac.mm in Sources */,
@@ -6700,6 +6716,7 @@
 				B60C5BD419AC68B10056FBDE /* CCBillBoard.cpp in Sources */,
 				15AE199619AAD39600C27E9E /* ListViewReader.cpp in Sources */,
 				50ABC0191926664800A911A9 /* CCSAXParser.cpp in Sources */,
+				F6D273311B535D4E007188B8 /* Repeat9Sprite.cpp in Sources */,
 				15AE189219AAD33D00C27E9E /* CCLayerGradientLoader.cpp in Sources */,
 				87EB6E3A1A441CA0009135D3 /* message_lite.cc in Sources */,
 				15AE1B6A19AADA9900C27E9E /* UIDeprecated.cpp in Sources */,
@@ -6741,6 +6758,7 @@
 				15AE1A2619AAD3D500C27E9E /* b2CollideEdge.cpp in Sources */,
 				1A5702EE180BCE750088DEC7 /* CCTMXLayer.cpp in Sources */,
 				15AE1BD619AAE01E00C27E9E /* CCControlSlider.cpp in Sources */,
+				F6D273281B535C49007188B8 /* TTFConfigLoader.cpp in Sources */,
 				50ABBE691925AB6F00A911A9 /* CCEventListenerFocus.cpp in Sources */,
 				15AE18EA19AAD35000C27E9E /* CCActionNode.cpp in Sources */,
 				15AE1A7819AAD40300C27E9E /* b2PolygonAndCircleContact.cpp in Sources */,
@@ -6834,7 +6852,6 @@
 				15AE1B6719AADA9900C27E9E /* UIScale9Sprite.cpp in Sources */,
 				292DB14319B4574100A80320 /* UIEditBoxImpl-android.cpp in Sources */,
 				15AE1A5219AAD40300C27E9E /* b2Draw.cpp in Sources */,
-				F6C5B1811B4B7E0800B3BD67 /* TTFConfigLoader.cpp in Sources */,
 				50ED2BE419BEAF7900A0AB90 /* UIEditBoxImpl-win32.cpp in Sources */,
 				50ABBE1F1925AB6F00A911A9 /* atitc.cpp in Sources */,
 				1A01C69818F57BE800EFE3A6 /* CCSet.cpp in Sources */,
@@ -6862,6 +6879,7 @@
 				15AE180819AAD2F700C27E9E /* CCAABB.cpp in Sources */,
 				15AE197019AAD35700C27E9E /* CCFrame.cpp in Sources */,
 				3823840F1A259092002C4610 /* NodeReaderDefine.cpp in Sources */,
+				F6D273241B535C49007188B8 /* CCRepeat9SpriteLoader.cpp in Sources */,
 				15AE1B9F19AADFDF00C27E9E /* UILayout.cpp in Sources */,
 				50ABBECF1925AB6F00A911A9 /* TGAlib.cpp in Sources */,
 				15AE199E19AAD39600C27E9E /* SliderReader.cpp in Sources */,
@@ -6897,7 +6915,6 @@
 				B29A7E2D19EE1B7700872B35 /* Slot.c in Sources */,
 				15AE182819AAD2F700C27E9E /* CCMeshSkin.cpp in Sources */,
 				15AE19A619AAD39600C27E9E /* TextReader.cpp in Sources */,
-				F6C5B1851B4B852500B3BD67 /* CCRepeat9SpriteLoader.cpp in Sources */,
 				15AE198819AAD36A00C27E9E /* ButtonReader.cpp in Sources */,
 				15AE1A6319AAD40300C27E9E /* b2Island.cpp in Sources */,
 				15AE1A8419AAD40300C27E9E /* b2Joint.cpp in Sources */,
@@ -6936,6 +6953,7 @@
 				1A01C69D18F57BE800EFE3A6 /* CCString.cpp in Sources */,
 				15AE199219AAD37300C27E9E /* ImageViewReader.cpp in Sources */,
 				2986667F18B1B246000E39CA /* CCTweenFunction.cpp in Sources */,
+				F6D273291B535C49007188B8 /* TTFConfigLoader.cpp in Sources */,
 				46A171051807CECB005B8026 /* CCPhysicsWorld.cpp in Sources */,
 				50ABBDA01925AB4100A911A9 /* CCGroupCommand.cpp in Sources */,
 				46A171031807CECB005B8026 /* CCPhysicsShape.cpp in Sources */,
@@ -7084,6 +7102,7 @@
 				15AE1ABA19AAD40300C27E9E /* b2EdgeAndPolygonContact.cpp in Sources */,
 				15AE181B19AAD2F700C27E9E /* CCBundle3D.cpp in Sources */,
 				87BA719C1A44ABA400929C43 /* common.cc in Sources */,
+				F6D273251B535C49007188B8 /* CCRepeat9SpriteLoader.cpp in Sources */,
 				1A57008E180BC5A10088DEC7 /* CCActionTiledGrid.cpp in Sources */,
 				1A570092180BC5A10088DEC7 /* CCActionTween.cpp in Sources */,
 				1A570099180BC5C10088DEC7 /* CCAtlasNode.cpp in Sources */,
@@ -7123,6 +7142,7 @@
 				15AE1AAA19AAD40300C27E9E /* b2World.cpp in Sources */,
 				15AE1AB019AAD40300C27E9E /* b2ChainAndPolygonContact.cpp in Sources */,
 				1A5701B2180BCB590088DEC7 /* CCFontFNT.cpp in Sources */,
+				F6D273321B535D4E007188B8 /* Repeat9Sprite.cpp in Sources */,
 				1A5701B6180BCB590088DEC7 /* CCFontFreeType.cpp in Sources */,
 				292DB16019B461CA00A80320 /* ExtensionDeprecated.cpp in Sources */,
 				50ABBEAC1925AB6F00A911A9 /* ccTypes.cpp in Sources */,
@@ -7194,6 +7214,7 @@
 				292DB15019B4574100A80320 /* UIEditBoxImpl-stub.cpp in Sources */,
 				15AE185F19AAD31200C27E9E /* SimpleAudioEngine.mm in Sources */,
 				B29A7DC819EE1B7700872B35 /* SkeletonRenderer.cpp in Sources */,
+				F6D273381B535D4E007188B8 /* RepeatNode.cpp in Sources */,
 				15AE1BE819AAE01E00C27E9E /* CCControl.cpp in Sources */,
 				1A570226180BCC1A0088DEC7 /* CCParticleExamples.cpp in Sources */,
 				15AE194919AAD35100C27E9E /* CCComController.cpp in Sources */,
@@ -7327,6 +7348,7 @@
 				503DD8E71926736A00CD74DD /* CCEAGLView-ios.mm in Sources */,
 				3E2BDAEC19C0436F0055CDCD /* AudioEngine.cpp in Sources */,
 				382383F11A258FA7002C4610 /* flatc.cpp in Sources */,
+				F6D273211B535C49007188B8 /* CCControlButtonBMFontLoader.cpp in Sources */,
 				15B3707919EE414C00ABE682 /* AssetsManagerEx.cpp in Sources */,
 				50ABBDA41925AB4100A911A9 /* CCQuadCommand.cpp in Sources */,
 				15AE18C319AAD33D00C27E9E /* CCLayerGradientLoader.cpp in Sources */,
