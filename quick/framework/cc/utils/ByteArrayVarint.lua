@@ -53,13 +53,13 @@ end
 --- Convert signed int to unsigned int
 -- After converting, 1=2, -1=1, -2=3, 2=4
 function ByteArrayVarint:_zigZagEncode(__value)
-	if __value >= 0 then return bit.lshift(__value, 1) end
-	return bit.bxor(bit.lshift(__value, 1), bit.bnot(0))
+	if __value >= 0 then return bit.blshift(__value, 1) end
+	return bit.bxor(bit.blshift(__value, 1), bit.bnot(0))
 end
 
 function ByteArrayVarint:_zigZagDecode(__value)
-	if bit.band(__value, 0x1) == 0 then return bit.rshift(__value, 1) end
-	return bit.bxor(bit.rshift(__value, 1), bit.bnot(0))
+	if bit.band(__value, 0x1) == 0 then return bit.brshift(__value, 1) end
+	return bit.bxor(bit.brshift(__value, 1), bit.bnot(0))
 end
 
 function ByteArrayVarint:_encodeVarint(__value)
@@ -73,11 +73,11 @@ function ByteArrayVarint:_encodeVarint(__value)
 	]]
 	-- if __value < 0 then __value = 0 end
 	local __bytes = bit.band(__value ,0x7f)
-	__value = bit.rshift(__value, 7)
+	__value = bit.brshift(__value, 7)
 	while __value ~= 0 do
 		self:writeByte(bit.bor(0x80, __bytes))
 		__bytes = bit.band(__value , 0x7f)
-		__value = bit.rshift(__value, 7)
+		__value = bit.brshift(__value, 7)
 		-- print(__bytes, __value)
 	end
 	self:writeByte(__bytes)
@@ -89,7 +89,7 @@ function ByteArrayVarint:_decodeVarint()
 	local __byte = nil
 	while self._pos <= #self._buf do
 		__byte = self:readByte()
-		__result = bit.bor(__result, bit.lshift(bit.band(__byte, 0x7f), __shift))
+		__result = bit.bor(__result, bit.blshift(bit.band(__byte, 0x7f), __shift))
 		if bit.band(__byte, 0x80) == 0 then
 			return __result
 		end

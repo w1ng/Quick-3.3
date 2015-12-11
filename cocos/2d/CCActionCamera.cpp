@@ -239,4 +239,110 @@ void OrbitCamera::sphericalRadius(float *newRadius, float *zenith, float *azimut
     *newRadius = r / FLT_EPSILON;
 }
 
+
+//
+// OrbitCameraPoker
+//
+
+OrbitCameraPoker * OrbitCameraPoker::create(float t, float radius, float deltaRadius, float angleZ, float deltaAngleZ, float angleX, float deltaAngleX)
+{
+    OrbitCameraPoker * obitCameraPoker = new (std::nothrow) OrbitCameraPoker();
+    if(obitCameraPoker->initWithDuration(t, radius, deltaRadius, angleZ, deltaAngleZ, angleX, deltaAngleX))
+    {
+        obitCameraPoker->autorelease();
+        return obitCameraPoker;
+    }
+    CC_SAFE_DELETE(obitCameraPoker);
+    return nullptr;
+}
+
+OrbitCameraPoker* OrbitCameraPoker::clone() const
+{
+    // no copy constructor
+    auto a = new (std::nothrow) OrbitCameraPoker();
+    a->initWithDuration(_duration, m_fRadius, m_fDeltaRadius, m_fAngleZ, m_fDeltaAngleZ, m_fAngleX, m_fDeltaAngleX);
+    a->autorelease();
+    return a;
+}
+
+bool OrbitCameraPoker::initWithDuration(float t, float radius, float deltaRadius, float angleZ, float deltaAngleZ, float angleX, float deltaAngleX)
+{
+    if ( ActionInterval::initWithDuration(t) )
+    {
+        m_fRadius = radius;
+        m_fDeltaRadius = deltaRadius;
+        m_fAngleZ = angleZ;
+        m_fDeltaAngleZ = deltaAngleZ;
+        m_fAngleX = angleX;
+        m_fDeltaAngleX = deltaAngleX;
+        
+        m_fRadDeltaZ = (float)CC_DEGREES_TO_RADIANS(deltaAngleZ);
+        m_fRadDeltaX = (float)CC_DEGREES_TO_RADIANS(deltaAngleX);
+        return true;
+    }
+    return false;
+}
+
+void OrbitCameraPoker::startWithTarget(Node *target)
+{
+    ActionCamera::startWithTarget(target);
+    
+    float r, zenith, azimuth;
+    this->sphericalRadius(&r, &zenith, &azimuth);
+    if( isnan(m_fRadius) )
+        m_fRadius = r;
+    if( isnan(m_fAngleZ) )
+        m_fAngleZ = (float)CC_RADIANS_TO_DEGREES(zenith);
+    if( isnan(m_fAngleX) )
+        m_fAngleX = (float)CC_RADIANS_TO_DEGREES(azimuth);
+    
+    m_fRadZ = (float)CC_DEGREES_TO_RADIANS(m_fAngleZ);
+    m_fRadX = (float)CC_DEGREES_TO_RADIANS(m_fAngleX);
+}
+
+void OrbitCameraPoker::update(float dt)
+{
+    float r = (m_fRadius + m_fDeltaRadius * dt) * FLT_EPSILON;
+    float za = m_fRadZ + m_fRadDeltaZ * dt;
+    float xa = m_fRadX + m_fRadDeltaX * dt;
+    
+    float i = sinf(za) * cosf(xa) * r + _center.x;
+    float j = sinf(za) * sinf(xa) * r + _center.y;
+    float k = cosf(za) * r + _center.z;
+    
+    setEye(i,j,k);
+}
+
+void OrbitCameraPoker::sphericalRadius(float *newRadius, float *zenith, float *azimuth)
+{
+    float r; // radius
+    float s;
+    
+    float x = _eye.x - _center.x;
+    float y = _eye.y - _center.y;
+    float z = _eye.z - _center.z;
+    
+    r = sqrtf( powf(x,2) + powf(y,2) + powf(z,2));
+    s = sqrtf( powf(x,2) + powf(y,2));
+    if( s == 0.0f )
+        s = FLT_EPSILON;
+    if(r==0.0f)
+        r = FLT_EPSILON;
+    
+    *zenith = acosf( z/r);
+    if( x < 0 )
+        *azimuth= (float)M_PI - asinf(y/s);
+    else
+        *azimuth = asinf(y/s);
+    
+    *newRadius = r / FLT_EPSILON;
+}
+
+
+
+
+
+
+
+
 NS_CC_END

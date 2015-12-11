@@ -25356,6 +25356,181 @@ int lua_register_cocos2dx_OrbitCamera(lua_State* tolua_S)
     return 1;
 }
 
+int lua_cocos2dx_OrbitCameraPoker_initWithDuration(lua_State* tolua_S)
+{
+    int argc = 0;
+    cocos2d::OrbitCameraPoker* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertype(tolua_S,1,"cc.OrbitCameraPoker",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    cobj = (cocos2d::OrbitCameraPoker*)tolua_tousertype(tolua_S,1,0);
+
+#if COCOS2D_DEBUG >= 1
+    if (!cobj) 
+    {
+        tolua_error(tolua_S,"invalid 'cobj' in function 'lua_cocos2dx_OrbitCameraPoker_initWithDuration'", nullptr);
+        return 0;
+    }
+#endif
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 7) 
+    {
+        double arg0;
+        double arg1;
+        double arg2;
+        double arg3;
+        double arg4;
+        double arg5;
+        double arg6;
+
+        ok &= luaval_to_number(tolua_S, 2,&arg0, "cc.OrbitCameraPoker:initWithDuration");
+
+        ok &= luaval_to_number(tolua_S, 3,&arg1, "cc.OrbitCameraPoker:initWithDuration");
+
+        ok &= luaval_to_number(tolua_S, 4,&arg2, "cc.OrbitCameraPoker:initWithDuration");
+
+        ok &= luaval_to_number(tolua_S, 5,&arg3, "cc.OrbitCameraPoker:initWithDuration");
+
+        ok &= luaval_to_number(tolua_S, 6,&arg4, "cc.OrbitCameraPoker:initWithDuration");
+
+        ok &= luaval_to_number(tolua_S, 7,&arg5, "cc.OrbitCameraPoker:initWithDuration");
+
+        ok &= luaval_to_number(tolua_S, 8,&arg6, "cc.OrbitCameraPoker:initWithDuration");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_OrbitCameraPoker_initWithDuration'", nullptr);
+            return 0;
+        }
+        bool ret = cobj->initWithDuration(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        tolua_pushboolean(tolua_S,(bool)ret);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "cc.OrbitCameraPoker:initWithDuration",argc, 7);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_OrbitCameraPoker_initWithDuration'.",&tolua_err);
+#endif
+
+    return 0;
+}
+int lua_cocos2dx_OrbitCameraPoker_create(lua_State* tolua_S)
+{
+    int argc = 0;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+#if COCOS2D_DEBUG >= 1
+    if (!tolua_isusertable(tolua_S,1,"cc.OrbitCameraPoker",0,&tolua_err)) goto tolua_lerror;
+#endif
+
+    argc = lua_gettop(tolua_S) - 1;
+
+    if (argc == 7)
+    {
+        double arg0;
+        double arg1;
+        double arg2;
+        double arg3;
+        double arg4;
+        double arg5;
+        double arg6;
+        ok &= luaval_to_number(tolua_S, 2,&arg0, "cc.OrbitCameraPoker:create");
+        ok &= luaval_to_number(tolua_S, 3,&arg1, "cc.OrbitCameraPoker:create");
+        ok &= luaval_to_number(tolua_S, 4,&arg2, "cc.OrbitCameraPoker:create");
+        ok &= luaval_to_number(tolua_S, 5,&arg3, "cc.OrbitCameraPoker:create");
+        ok &= luaval_to_number(tolua_S, 6,&arg4, "cc.OrbitCameraPoker:create");
+        ok &= luaval_to_number(tolua_S, 7,&arg5, "cc.OrbitCameraPoker:create");
+        ok &= luaval_to_number(tolua_S, 8,&arg6, "cc.OrbitCameraPoker:create");
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_OrbitCameraPoker_create'", nullptr);
+            return 0;
+        }
+        cocos2d::OrbitCameraPoker* ret = cocos2d::OrbitCameraPoker::create(arg0, arg1, arg2, arg3, arg4, arg5, arg6);
+        object_to_luaval<cocos2d::OrbitCameraPoker>(tolua_S, "cc.OrbitCameraPoker",(cocos2d::OrbitCameraPoker*)ret);
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d\n ", "cc.OrbitCameraPoker:create",argc, 7);
+    return 0;
+#if COCOS2D_DEBUG >= 1
+    tolua_lerror:
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_OrbitCameraPoker_create'.",&tolua_err);
+#endif
+    return 0;
+}
+int lua_cocos2dx_OrbitCameraPoker_constructor(lua_State* tolua_S)
+{
+    int argc = 0;
+    cocos2d::OrbitCameraPoker* cobj = nullptr;
+    bool ok  = true;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_Error tolua_err;
+#endif
+
+
+
+    argc = lua_gettop(tolua_S)-1;
+    if (argc == 0) 
+    {
+        if(!ok)
+        {
+            tolua_error(tolua_S,"invalid arguments in function 'lua_cocos2dx_OrbitCameraPoker_constructor'", nullptr);
+            return 0;
+        }
+        cobj = new cocos2d::OrbitCameraPoker();
+        cobj->autorelease();
+        int ID =  (int)cobj->_ID ;
+        int* luaID =  &cobj->_luaID ;
+        toluafix_pushusertype_ccobject(tolua_S, ID, luaID, (void*)cobj,"cc.OrbitCameraPoker");
+        return 1;
+    }
+    luaL_error(tolua_S, "%s has wrong number of arguments: %d, was expecting %d \n", "cc.OrbitCameraPoker:OrbitCameraPoker",argc, 0);
+    return 0;
+
+#if COCOS2D_DEBUG >= 1
+    tolua_error(tolua_S,"#ferror in function 'lua_cocos2dx_OrbitCameraPoker_constructor'.",&tolua_err);
+#endif
+
+    return 0;
+}
+
+static int lua_cocos2dx_OrbitCameraPoker_finalize(lua_State* tolua_S)
+{
+    printf("luabindings: finalizing LUA object (OrbitCameraPoker)");
+    return 0;
+}
+
+int lua_register_cocos2dx_OrbitCameraPoker(lua_State* tolua_S)
+{
+    tolua_usertype(tolua_S,"cc.OrbitCameraPoker");
+    tolua_cclass(tolua_S,"OrbitCameraPoker","cc.OrbitCameraPoker","cc.ActionCamera",nullptr);
+
+    tolua_beginmodule(tolua_S,"OrbitCameraPoker");
+        tolua_function(tolua_S,"new",lua_cocos2dx_OrbitCameraPoker_constructor);
+        tolua_function(tolua_S,"initWithDuration",lua_cocos2dx_OrbitCameraPoker_initWithDuration);
+        tolua_function(tolua_S,"create", lua_cocos2dx_OrbitCameraPoker_create);
+    tolua_endmodule(tolua_S);
+    std::string typeName = typeid(cocos2d::OrbitCameraPoker).name();
+    g_luaType[typeName] = "cc.OrbitCameraPoker";
+    g_typeCast["OrbitCameraPoker"] = "cc.OrbitCameraPoker";
+    return 1;
+}
+
 int lua_cocos2dx_ActionManager_getActionByTag(lua_State* tolua_S)
 {
     int argc = 0;
@@ -71401,6 +71576,7 @@ TOLUA_API int register_all_cocos2dx(lua_State* tolua_S)
 	lua_register_cocos2dx_TransitionSlideInL(tolua_S);
 	lua_register_cocos2dx_TransitionSlideInT(tolua_S);
 	lua_register_cocos2dx_Grid3D(tolua_S);
+	lua_register_cocos2dx_OrbitCameraPoker(tolua_S);
 	lua_register_cocos2dx_EaseCircleActionOut(tolua_S);
 	lua_register_cocos2dx_TransitionProgressInOut(tolua_S);
 	lua_register_cocos2dx_EaseCubicActionInOut(tolua_S);

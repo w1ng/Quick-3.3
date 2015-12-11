@@ -1,0 +1,437 @@
+
+{
+	gl.supports_vertex_array_object: true
+	cocos2d.x.version: quick-cocos2d-x 3.3
+	gl.vendor: NVIDIA Corporation
+	gl.supports_PVRTC: false
+	gl.renderer: NVIDIA GeForce GT 640M OpenGL Engine
+	cocos2d.x.compiled_with_profiler: false
+	gl.max_texture_size: 16384
+	gl.supports_ETC1: false
+	gl.supports_BGRA8888: false
+	cocos2d.x.build_type: DEBUG
+	gl.supports_discard_framebuffer: false
+	gl.supports_NPOT: true
+	gl.supports_S3TC: true
+	gl.version: 2.1 NVIDIA-10.4.2 310.41.35f01
+	gl.supports_ATITC: false
+	gl.max_texture_units: 16
+	cocos2d.x.compiled_with_gl_state_cache: true
+}
+
+
+Quick-Cocos2d-x C++ support ready.
+------------------------------------------------
+LOAD LUA FILE: /Users/stan/Documents/quick-3.3/quick/samples/tests/src/main.lua
+------------------------------------------------
+[LUA-print] ===========================================================
+[LUA-print]               LOAD QUICK FRAMEWORK
+[LUA-print] ===========================================================
+[LUA-print] [INFO] 
+[LUA-print] [INFO] # DEBUG                        = 1
+[LUA-print] [INFO] #
+[LUA-print] [INFO] # device.platform              = mac
+[LUA-print] [INFO] # device.model                 = unknown
+[LUA-print] [INFO] # device.language              = cn
+[LUA-print] [INFO] # device.writablePath          = /Users/stan/Documents/quick-3.3/quick/samples/tests/
+[LUA-print] [INFO] # device.directorySeparator    = /
+[LUA-print] [INFO] # device.pathSeparator         = :
+[LUA-print] [INFO] #
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] [INFO] # CONFIG_SCREEN_AUTOSCALE      = FIXED_WIDTH
+[LUA-print] [INFO] # CONFIG_SCREEN_WIDTH          = 640.00
+[LUA-print] [INFO] # CONFIG_SCREEN_HEIGHT         = 960.00
+[LUA-print] [INFO] # display.widthInPixels        = 640.00
+[LUA-print] [INFO] # display.heightInPixels       = 960.00
+[LUA-print] [INFO] # display.contentScaleFactor   = 1.00
+[LUA-print] [INFO] # display.width                = 640.00
+[LUA-print] [INFO] # display.height               = 960.00
+[LUA-print] [INFO] # display.cx                   = 320.00
+[LUA-print] [INFO] # display.cy                   = 480.00
+[LUA-print] [INFO] # display.left                 = 0.00
+[LUA-print] [INFO] # display.right                = 640.00
+[LUA-print] [INFO] # display.top                  = 960.00
+[LUA-print] [INFO] # display.bottom               = 0.00
+[LUA-print] [INFO] # display.c_left               = -320.00
+[LUA-print] [INFO] # display.c_right              = 320.00
+[LUA-print] [INFO] # display.c_top                = 480.00
+[LUA-print] [INFO] # display.c_bottom             = -480.00
+[LUA-print] [INFO] #
+libpng warning: iCCP: known incorrect sRGB profile
+[LUA-print] 
+[LUA-print] The device name is: 	iMac13,1
+[LUA-print] The device uuid is: 	9c8bb06f896aad52f64d52ef1ae1b88c75c5df8b
+[LUA-print] 
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test showAlert
+[LUA-print] --
+Native::createAlertView() - title: Confirm Exit, message: Are you sure exit game ?, cancelButtonTitle: YES
+Native::addAlertButton() - buttonTitle: NO
+Native::showAlertViewWithLuaListener()
+[LUA-print] 玩家选择了 NO 按钮
+Native::removeAlertView()
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test callme
+[LUA-print] --
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test openWebBrowser
+[LUA-print] --
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test vibrate
+[LUA-print] --
+Native::vibrate() not support on this platform.
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test vibrate
+[LUA-print] --
+Native::vibrate() not support on this platform.
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test getInputText
+[LUA-print] --
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test getInputText
+[LUA-print] --
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test activityIndicator
+[LUA-print] --
+[LUA-print] Hide activity indicator after 2s.
+Native::showActivityIndicator() not support on this platform.
+Native::hideActivityIndicator() not support on this platform.
+if the index doesn't exist, it is an error
+touchesEnded or touchesCancel: size = 0
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test layerMultiTouch
+[LUA-print] --
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+[LUA-print] ----------------------------------------
+[LUA-print] userdata
+[LUA-print] nil	nil	nil
+[LUA-print] nil	nil	nil
+cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_03.png
+cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_04.png
+cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_02.png
+cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_01.png
+cocos2d: TextureCache: removing unused texture: /Users/stan/Documents/quick-3.3/quick/samples/tests/res/grossini_blue.png
+[LUA-print] ----------------------------------------
+[LUA-print] -- run test getFileData
+[LUA-print] --
+[LUA-print] 
+-- 0 - disable debug info, 1 - less debug info, 2 - verbose debug info
+DEBUG = 1
+
+-- display FPS stats on screen
+DEBUG_FPS = true
+
+-- dump memory info every 10 seconds
+DEBUG_MEM = false
+
+-- load deprecated API
+LOAD_DEPRECATED_API = false
+
+-- load shortcodes API
+LOAD_SHORTCODES_API = true
+
+-- screen orientation
+CONFIG_SCREEN_ORIENTATION = "portrait"
+
+-- design resolution
+CONFIG_SCREEN_WIDTH  = 640
+CONFIG_SCREEN_HEIGHT = 960
+
+-- auto scale mode
+CONFIG_SCREEN_AUTOSCALE = "FIXED_WIDTH"
+

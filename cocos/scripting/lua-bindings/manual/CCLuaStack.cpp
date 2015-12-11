@@ -53,7 +53,8 @@ extern "C" {
 #include "lua_cocos2dx_physics_manual.hpp"
 #include "lua_cocos2dx_experimental_auto.hpp"
 #include "lua_cocos2dx_experimental_manual.hpp"
-
+#include "lua_gaf.hpp"
+#include "lua_gaf_main.hpp"
 
 namespace {
 int lua_print(lua_State * luastate)
@@ -191,6 +192,10 @@ bool LuaStack::init(void)
     register_all_cocos2dx_experimental_manual(_state);
 
     register_glnode_manual(_state);
+    
+    //        load gaf
+    register_all_gaf(_state);
+    append_gaf_scripts(_state);
 #if CC_USE_PHYSICS
     register_all_cocos2dx_physics(_state);
     register_all_cocos2dx_physics_manual(_state);

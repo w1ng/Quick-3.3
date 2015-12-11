@@ -100,6 +100,8 @@ def main():
     project_root = os.path.abspath(os.path.join(os.path.dirname(__file__), '..', '..'))
     cocos_root = os.path.abspath(os.path.join(project_root, ''))
     cxx_generator_root = os.path.abspath(os.path.join(project_root, 'tools/bindings-generator'))
+    tmp_root = os.path.join(os.path.dirname(__file__), "..", "..")
+    gaf_root = os.path.abspath(os.path.join(tmp_root, 'extensions/gaf'))
 
     # save config to file
     config = ConfigParser.ConfigParser()
@@ -107,7 +109,9 @@ def main():
     config.set('DEFAULT', 'clangllvmdir', llvm_path)
     config.set('DEFAULT', 'cocosdir', cocos_root)
     config.set('DEFAULT', 'cxxgeneratordir', cxx_generator_root)
+    config.set('DEFAULT', 'gafdir', gaf_root)
     config.set('DEFAULT', 'extra_flags', '')
+
 
     # To fix parse error on windows, we must difine __WCHAR_MAX__ and undefine __MINGW32__ .
     if platform == 'win32':
@@ -148,6 +152,7 @@ def main():
                     'cocos2dx_3d.ini': ('cocos2dx_3d', 'lua_cocos2dx_3d_auto'), \
                     'cocos2dx_audioengine.ini': ('cocos2dx_audioengine', 'lua_cocos2dx_audioengine_auto'), \
                     'cocos2dx_csloader.ini' : ('cocos2dx_csloader', 'lua_cocos2dx_csloader_auto'), \
+                    'gaf.ini' : ('gaf', 'lua_gaf'), \
                     }
         target = 'lua'
         generator_py = '%s/generator.py' % cxx_generator_root

@@ -123,6 +123,10 @@ set(lua_bindings_auto_files
     auto/lua_cocos2dx_csloader_auto.cpp
     auto/lua_cocos2dx_ui_auto.cpp
     auto/lua_cocos2dx_audioengine_auto.cpp
+    auto/lua_gaf_main.hpp
+    auto/lua_gaf_main.cpp
+    auto/lua_gaf.cpp
+    auto/lua_gaf.hpp
     )
 
 if(MACOSX)

@@ -317,6 +317,11 @@
 
 
 --------------------------------------------------------
+-- the cc OrbitCameraPoker
+-- @field [parent=#cc] OrbitCameraPoker#OrbitCameraPoker OrbitCameraPoker preloaded module
+
+
+--------------------------------------------------------
 -- the cc ActionManager
 -- @field [parent=#cc] ActionManager#ActionManager ActionManager preloaded module
 

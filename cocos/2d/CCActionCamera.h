@@ -133,6 +133,51 @@ protected:
     float _radDeltaX;
 };
 
+
+class CC_DLL OrbitCameraPoker : public ActionCamera //<NSCopying>
+{
+public:
+    OrbitCameraPoker()
+    : m_fRadius(0.0)
+    , m_fDeltaRadius(0.0)
+    , m_fAngleZ(0.0)
+    , m_fDeltaAngleZ(0.0)
+    , m_fAngleX(0.0)
+    , m_fDeltaAngleX(0.0)
+    , m_fRadZ(0.0)
+    , m_fRadDeltaZ(0.0)
+    , m_fRadX(0.0)
+    , m_fRadDeltaX(0.0)
+    {}
+    ~OrbitCameraPoker(){}
+    /** creates a OrbitCamera action with radius, delta-radius,  z, deltaZ, x, deltaX */
+    static OrbitCameraPoker* create(float t, float radius, float deltaRadius, float angleZ, float deltaAngleZ, float angleX, float deltaAngleX);
+    
+    /** initializes a OrbitCamera action with radius, delta-radius,  z, deltaZ, x, deltaX */
+    bool initWithDuration(float t, float radius, float deltaRadius, float angleZ, float deltaAngleZ, float angleX, float deltaAngleX);
+    /** positions the camera according to spherical coordinates */
+    void sphericalRadius(float *r, float *zenith, float *azimuth);
+    
+    // Overrides
+    OrbitCameraPoker *clone() const override;
+    virtual void startWithTarget(Node *target) override;
+    virtual void update(float time) override;
+    
+    
+protected:
+    float m_fRadius;
+    float m_fDeltaRadius;
+    float m_fAngleZ;
+    float m_fDeltaAngleZ;
+    float m_fAngleX;
+    float m_fDeltaAngleX;
+    
+    float m_fRadZ;
+    float m_fRadDeltaZ;
+    float m_fRadX;
+    float m_fRadDeltaX;
+};
+
 // end of actions group
 /// @}
 

@@ -1,9 +1,3 @@
-#quick-cocos2d-x v3
-这个版本修改了quick-cocos2d-x v3对ccbi文件的一些加载方法,配合[CocosBuilder-Quick3.3](https://github.com/w1ng/CocosBuilder-Quick3.3)使用.
-目的是达到对cocosbuilder更好的支持,不用再去重复地编写一些简单的UI代码.
-
-#TODO
-之后会集成进来Cocos2dxGAFPlayer
 
 quick-cocos2d-x v3
 ==================

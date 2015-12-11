@@ -2,7 +2,7 @@
 #define _CCB_CCCONTROLBUTTONBMFONTLOADER_H_
 
 #include "CCControlButtonLoader.h"
-#include "extensions//GUI/CCControlExtension/CCControlButton.h"
+#include "extensions/GUI/CCControlExtension/CCControlButton.h"
 
 namespace cocosbuilder {
 

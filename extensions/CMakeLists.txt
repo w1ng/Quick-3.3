@@ -14,6 +14,11 @@ set(COCOS_EXTENSIONS_SRC
   ../extensions/assets-manager/CCEventListenerAssetsManagerEx.cpp
   ../extensions/assets-manager/Downloader.cpp
   ../extensions/assets-manager/Manifest.cpp
+  ../extensions/GUI/CCControlExtension/RepeatNode/Repeat9Sprite.cpp
+  ../extensions/GUI/CCControlExtension/RepeatNode/Repeat9Sprite.h
+  ../extensions/GUI/CCControlExtension/RepeatNode/RepeatEnum.h
+  ../extensions/GUI/CCControlExtension/RepeatNode/RepeatNode.cpp
+  ../extensions/GUI/CCControlExtension/RepeatNode/RepeatNode.h
   ../extensions/GUI/CCControlExtension/CCControl.cpp
   ../extensions/GUI/CCControlExtension/CCControlButton.cpp
   ../extensions/GUI/CCControlExtension/CCControlColourPicker.cpp
@@ -30,5 +35,29 @@ set(COCOS_EXTENSIONS_SRC
   ../extensions/GUI/CCScrollView/CCTableViewCell.cpp
   ../extensions/physics-nodes/CCPhysicsDebugNode.cpp
   ../extensions/physics-nodes/CCPhysicsSprite.cpp
+  ../extensions/gaf/GAFAnimationFrame.cpp
+  ../extensions/gaf/GAFAnimationSequence.cpp
+  ../extensions/gaf/GAFAsset.cpp
+  ../extensions/gaf/GAFAssetTextureManager.cpp
+  ../extensions/gaf/GAFCachedTexture.cpp
+  ../extensions/gaf/GAFFile.cpp
+  ../extensions/gaf/GAFFilterData.cpp
+  ../extensions/gaf/GAFFilterManager.cpp
+  ../extensions/gaf/GAFLoader.cpp
+  ../extensions/gaf/GAFMask.cpp
+  ../extensions/gaf/GAFMovieClip.cpp
+  ../extensions/gaf/GAFObject.cpp
+  ../extensions/gaf/GAFPrecompiled.cpp
+  ../extensions/gaf/GAFQuadCommand.cpp
+  ../extensions/gaf/GAFShaderManager.cpp
+  ../extensions/gaf/GAFSoundInfo.cpp
+  ../extensions/gaf/GAFSprite.cpp
+  ../extensions/gaf/GAFStream.cpp
+  ../extensions/gaf/GAFSubobjectState.cpp
+  ../extensions/gaf/GAFTextData.cpp
+  ../extensions/gaf/GAFTextField.cpp
+  ../extensions/gaf/GAFTextureAtlas.cpp
+  ../extensions/gaf/GAFTextureAtlasElement.cpp
+  ../extensions/gaf/GAFTimeline.cpp  ../extensions/gaf/GAFTimelineAction.cpp  ../extensions/gaf/PrimitiveDeserializer.cpp  ../extensions/gaf/TagDefineAnimationFrames.cpp  ../extensions/gaf/TagDefineAnimationFrames2.cpp  ../extensions/gaf/TagDefineAnimationMasks.cpp  ../extensions/gaf/TagDefineAnimationObjects.cpp  ../extensions/gaf/TagDefineAtlas.cpp  ../extensions/gaf/TagDefineAtlas3.cpp  ../extensions/gaf/TagDefineNamedParts.cpp  ../extensions/gaf/TagDefineSequences.cpp  ../extensions/gaf/TagDefineSounds.cpp  ../extensions/gaf/TagDefineStage.cpp  ../extensions/gaf/TagDefineTextField.cpp  ../extensions/gaf/TagDefineTimeline.cpp
   ${PLATFORM_EXTENSIONS_SRC}
 )
