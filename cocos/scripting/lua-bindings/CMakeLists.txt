@@ -10,6 +10,9 @@ include_directories(
   ${cocos_root}/external/lua
   ${cocos_root}/external/xxtea
   ${cocos_root}/external
+  ${cocos_root}/extensions
+  ${cocos_root}/extensions/gaf
+  ${cocos_root}/extensions/GUI/CCControlExtension/RepeatNode
   ${cocos_root}/cocos
   ${cocos_root}/cocos/ui
   ${cocos_root}/cocos/2d
@@ -123,10 +126,8 @@ set(lua_bindings_auto_files
     auto/lua_cocos2dx_csloader_auto.cpp
     auto/lua_cocos2dx_ui_auto.cpp
     auto/lua_cocos2dx_audioengine_auto.cpp
-    auto/lua_gaf_main.hpp
     auto/lua_gaf_main.cpp
     auto/lua_gaf.cpp
-    auto/lua_gaf.hpp
     )
 
 if(MACOSX)

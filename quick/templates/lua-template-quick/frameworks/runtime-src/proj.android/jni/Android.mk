@@ -49,6 +49,7 @@ $(LOCAL_PATH)/../protocols/include
 LOCAL_WHOLE_STATIC_LIBRARIES += PluginProtocolStatic
 
 LOCAL_STATIC_LIBRARIES := cocos2d_lua_static
+LOCAL_STATIC_LIBRARIES += cocos_extension_static
 LOCAL_STATIC_LIBRARIES += lua_extensions_static
 LOCAL_STATIC_LIBRARIES += extra_static
 ifeq ($(NDK_DEBUG),1)
