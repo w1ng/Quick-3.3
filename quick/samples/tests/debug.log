@@ -57,6 +57,7 @@ libpng warning: iCCP: known incorrect sRGB profile
 [LUA-print] [INFO] # display.c_top                = 480.00
 [LUA-print] [INFO] # display.c_bottom             = -480.00
 [LUA-print] [INFO] #
+<<<<<<< HEAD
 [LUA-print] ----------------------------------------
 [LUA-print] -- run test send data to server
 [LUA-print] --
@@ -226,3 +227,5 @@ libpng warning: iCCP: known incorrect sRGB profile
 [LUA-print] dump from: [string "tests/framework/networkTest.lua"]:91: in function <[string "tests/framework/networkTest.lua"]:82>
 [LUA-print] - "GET COOKIE FROM SERVER" = {
 [LUA-print] - }
+=======
+>>>>>>> origin/master
