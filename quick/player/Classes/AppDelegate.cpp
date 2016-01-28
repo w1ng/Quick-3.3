@@ -55,6 +55,7 @@ void AppDelegate::initGLContextAttrs()
 {
     //set OpenGL context attributions,now can only set six attributions:
     //red,green,blue,alpha,depth,stencil
+//    GLContextAttrs glContextAttrs = {8, 8, 8, 8, 24, 8};
     GLContextAttrs glContextAttrs = {8, 8, 8, 8, 24, 8};
 
     GLView::setGLContextAttrs(glContextAttrs);
@@ -91,7 +92,8 @@ bool AppDelegate::applicationDidFinishLaunching()
     quick_module_register(L);
 
     LuaStack* stack = engine->getLuaStack();
-    stack->setXXTEAKeyAndSign("2dxLua", strlen("2dxLua"), "XXTEA", strlen("XXTEA"));
+//    cocos改成需要使用的xxtea密钥
+    stack->setXXTEAKeyAndSign("cocos", strlen("cocos"), "XXTEA", strlen("XXTEA"));
     
     
     StartupCall *call = StartupCall::create(this);

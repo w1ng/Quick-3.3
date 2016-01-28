@@ -15,10 +15,7 @@ set(COCOS_EXTENSIONS_SRC
   ../extensions/assets-manager/Downloader.cpp
   ../extensions/assets-manager/Manifest.cpp
   ../extensions/GUI/CCControlExtension/RepeatNode/Repeat9Sprite.cpp
-  ../extensions/GUI/CCControlExtension/RepeatNode/Repeat9Sprite.h
-  ../extensions/GUI/CCControlExtension/RepeatNode/RepeatEnum.h
   ../extensions/GUI/CCControlExtension/RepeatNode/RepeatNode.cpp
-  ../extensions/GUI/CCControlExtension/RepeatNode/RepeatNode.h
   ../extensions/GUI/CCControlExtension/CCControl.cpp
   ../extensions/GUI/CCControlExtension/CCControlButton.cpp
   ../extensions/GUI/CCControlExtension/CCControlColourPicker.cpp

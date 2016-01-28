@@ -324,6 +324,17 @@
 -- @return string#string ret (return value: string)
         
 --------------------------------
+-- 解压<br>
+-- param filename 文件名.(包含路径)<br>
+-- param destPath 解压到的路径<br>
+-- return 是否成功
+-- @function [parent=#FileUtils] uncompressDir 
+-- @param self
+-- @param #string filename
+-- @param #string destPath
+-- @return bool#bool ret (return value: bool)
+        
+--------------------------------
 -- Destroys the instance of FileUtils.
 -- @function [parent=#FileUtils] destroyInstance 
 -- @param self

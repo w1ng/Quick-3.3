@@ -212,10 +212,11 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
         // ...add to FrameLayout
         mFrameLayout.addView(this.mGLSurfaceView);
-
+        
         // Switch to supported OpenGL (ARGB888) mode on emulator
         if (isAndroidEmulator())
-           this.mGLSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
+        	this.mGLSurfaceView.setEGLConfigChooser(5, 6, 5, 0, 16, 8);
+//           this.mGLSurfaceView.setEGLConfigChooser(8, 8, 8, 8, 16, 0);
 
         this.mGLSurfaceView.setCocos2dxRenderer(new Cocos2dxRenderer());
         this.mGLSurfaceView.setCocos2dxEditText(edittext);
@@ -350,8 +351,10 @@ public abstract class Cocos2dxActivity extends Activity implements Cocos2dxHelpe
 
         }
         cocos2dEGLConfigChooser chooser = new cocos2dEGLConfigChooser(this.mGLContextAttrs);
-        glSurfaceView.setEGLConfigChooser(chooser);
+//        glSurfaceView.setEGLConfigChooser(chooser);
+        glSurfaceView.setEGLConfigChooser(5, 6, 5, 0, 16, 8);
 
+        
         return glSurfaceView;
     }
 

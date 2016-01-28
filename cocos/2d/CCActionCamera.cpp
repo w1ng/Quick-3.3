@@ -307,10 +307,24 @@ void OrbitCameraPoker::update(float dt)
     float xa = m_fRadX + m_fRadDeltaX * dt;
     
     float i = sinf(za) * cosf(xa) * r + _center.x;
-    float j = sinf(za) * sinf(xa) * r + _center.y;
-    float k = cosf(za) * r + _center.z;
+    float j = sinf(za) * sinf(xa) * r + _center.y-7;
+    float k = cosf(za) * r + _center.z+7;
     
     setEye(i,j,k);
+    
+//    float r = (m_fRadius + m_fDeltaRadius * dt) * CCCamera::getZEye();
+//    float za = m_fRadZ + m_fRadDeltaZ * dt;
+//    float xa = m_fRadX + m_fRadDeltaX * dt;
+//    
+//    float i = sinf(za) * cosf(xa) * r + m_fCenterXOrig;
+//    float j = sinf(za) * sinf(xa) * r + m_fCenterYOrig-7;
+//    float k = cosf(za) * r + m_fCenterZOrig+7;
+//    
+//    //    float x,y,z;
+//    //    m_pTarget->getCamera()->getEyeXYZ(&x, &y, &z);
+//    //    CCLog("getXYZ:__>%f,%f,%f",x,y,z);
+//    //    CCLog("------>%f,%f,%f",i,j,k);
+//    m_pTarget->getCamera()->setEyeXYZ(i,j,k);
 }
 
 void OrbitCameraPoker::sphericalRadius(float *newRadius, float *zenith, float *azimuth)

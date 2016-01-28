@@ -163,7 +163,9 @@ static const char *char2escape[256] = {
     "\\u0018", "\\u0019", "\\u001a", "\\u001b",
     "\\u001c", "\\u001d", "\\u001e", "\\u001f",
     NULL, NULL, "\\\"", NULL, NULL, NULL, NULL, NULL,
-    NULL, NULL, NULL, NULL, NULL, NULL, NULL, "\\/",
+    NULL, NULL, NULL, NULL, NULL, NULL, NULL,
+    NULL,
+//    "\\/",
     NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
     NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
     NULL, NULL, NULL, NULL, NULL, NULL, NULL, NULL,
@@ -446,7 +448,7 @@ static void json_create_config(lua_State *l)
     for (i = 0; i < 256; i++)
         cfg->escape2char[i] = 0;          /* String error */
     cfg->escape2char['"'] = '"';
-    cfg->escape2char['\\'] = '\\';
+    cfg->escape2char['\\'] = '\\';    /**/
     cfg->escape2char['/'] = '/';
     cfg->escape2char['b'] = '\b';
     cfg->escape2char['t'] = '\t';
@@ -1040,6 +1042,7 @@ static void json_next_token(json_parse_t *json, json_token_t *token)
     /* Eat whitespace. */
     while (1) {
         ch = (unsigned char)*(json->ptr);
+
         token->type = ch2token[ch];
         if (token->type != T_WHITESPACE)
             break;
@@ -1128,6 +1131,7 @@ static void json_throw_parse_error(lua_State *l, json_parse_t *json,
         found = token->value.string;
     else
         found = json_token_type_name[token->type];
+
 
     /* Note: token->index is 0 based, display starting from 1 */
     luaL_error(l, "Expected %s but found %s at character %d",
@@ -1291,6 +1295,7 @@ static int json_decode(lua_State *l)
     json.current_depth = 0;
     json.ptr = json.data;
 
+    
     /* Detect Unicode other than UTF-8 (see RFC 4627, Sec 3)
      *
      * CJSON can support any simple data type, hence only the first
@@ -1304,11 +1309,15 @@ static int json_decode(lua_State *l)
      * string must be smaller than the entire json string */
     json.tmp = strbuf_new((int)json_len);
 
+
     json_next_token(&json, &token);
+
     json_process_value(l, &json, &token);
+
 
     /* Ensure there is no more input left */
     json_next_token(&json, &token);
+
 
     if (token.type != T_END)
         json_throw_parse_error(l, &json, "the end", &token);

@@ -22,7 +22,7 @@
 
 Quick-Cocos2d-x C++ support ready.
 ------------------------------------------------
-LOAD LUA FILE: /Users/stan/Documents/quick-3.3/quick/samples/tests/src/main.lua
+LOAD LUA FILE: /Users/stan/Documents/Quick-3.3/quick/samples/tests/src/main.lua
 ------------------------------------------------
 [LUA-print] ===========================================================
 [LUA-print]               LOAD QUICK FRAMEWORK
@@ -33,7 +33,7 @@ LOAD LUA FILE: /Users/stan/Documents/quick-3.3/quick/samples/tests/src/main.lua
 [LUA-print] [INFO] # device.platform              = mac
 [LUA-print] [INFO] # device.model                 = unknown
 [LUA-print] [INFO] # device.language              = cn
-[LUA-print] [INFO] # device.writablePath          = /Users/stan/Documents/quick-3.3/quick/samples/tests/
+[LUA-print] [INFO] # device.writablePath          = /Users/stan/Documents/Quick-3.3/quick/samples/tests/
 [LUA-print] [INFO] # device.directorySeparator    = /
 [LUA-print] [INFO] # device.pathSeparator         = :
 [LUA-print] [INFO] #
@@ -57,381 +57,172 @@ libpng warning: iCCP: known incorrect sRGB profile
 [LUA-print] [INFO] # display.c_top                = 480.00
 [LUA-print] [INFO] # display.c_bottom             = -480.00
 [LUA-print] [INFO] #
-libpng warning: iCCP: known incorrect sRGB profile
-[LUA-print] 
-[LUA-print] The device name is: 	iMac13,1
-[LUA-print] The device uuid is: 	9c8bb06f896aad52f64d52ef1ae1b88c75c5df8b
-[LUA-print] 
 [LUA-print] ----------------------------------------
-[LUA-print] -- run test showAlert
+[LUA-print] -- run test send data to server
 [LUA-print] --
-Native::createAlertView() - title: Confirm Exit, message: Are you sure exit game ?, cancelButtonTitle: YES
-Native::addAlertButton() - buttonTitle: NO
-Native::showAlertViewWithLuaListener()
-[LUA-print] 玩家选择了 NO 按钮
-Native::removeAlertView()
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test callme
-[LUA-print] --
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test openWebBrowser
-[LUA-print] --
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test vibrate
-[LUA-print] --
-Native::vibrate() not support on this platform.
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test vibrate
-[LUA-print] --
-Native::vibrate() not support on this platform.
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test getInputText
-[LUA-print] --
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test getInputText
-[LUA-print] --
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test activityIndicator
-[LUA-print] --
-[LUA-print] Hide activity indicator after 2s.
-Native::showActivityIndicator() not support on this platform.
-Native::hideActivityIndicator() not support on this platform.
-if the index doesn't exist, it is an error
-touchesEnded or touchesCancel: size = 0
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test layerMultiTouch
-[LUA-print] --
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] send data to server
+[LUA-print] REQUEST START 1
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
+[LUA-print] REQUEST 1 - event.name = progress
 [LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-[LUA-print] ----------------------------------------
-[LUA-print] userdata
-[LUA-print] nil	nil	nil
-[LUA-print] nil	nil	nil
-cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_03.png
-cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_04.png
-cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_02.png
-cocos2d: SpriteFrameCache: removing unused frame: grossini_blue_01.png
-cocos2d: TextureCache: removing unused texture: /Users/stan/Documents/quick-3.3/quick/samples/tests/res/grossini_blue.png
-[LUA-print] ----------------------------------------
-[LUA-print] -- run test getFileData
-[LUA-print] --
-[LUA-print] 
--- 0 - disable debug info, 1 - less debug info, 2 - verbose debug info
-DEBUG = 1
-
--- display FPS stats on screen
-DEBUG_FPS = true
-
--- dump memory info every 10 seconds
-DEBUG_MEM = false
-
--- load deprecated API
-LOAD_DEPRECATED_API = false
-
--- load shortcodes API
-LOAD_SHORTCODES_API = true
-
--- screen orientation
-CONFIG_SCREEN_ORIENTATION = "portrait"
-
--- design resolution
-CONFIG_SCREEN_WIDTH  = 640
-CONFIG_SCREEN_HEIGHT = 960
-
--- auto scale mode
-CONFIG_SCREEN_AUTOSCALE = "FIXED_WIDTH"
-
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = progress
+[LUA-print] ----------------------------------------
+[LUA-print] REQUEST 1 - event.name = completed
+[LUA-print] REQUEST 1 - getResponseStatusCode() = 404
+[LUA-print] ----------------------------------------
+[LUA-print] dump from: [string "tests/framework/networkTest.lua"]:91: in function <[string "tests/framework/networkTest.lua"]:82>
+[LUA-print] - "GET COOKIE FROM SERVER" = {
+[LUA-print] - }

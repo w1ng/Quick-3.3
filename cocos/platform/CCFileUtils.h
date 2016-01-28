@@ -274,6 +274,15 @@ public:
     void addSearchPath(const std::string & path, const bool front=false);
     
     /**
+     *  解压
+     *
+     *  @param filename 文件名.(包含路径)
+     *  @param destPath 解压到的路径
+     *
+     *  @return 是否成功
+     */
+    bool uncompressDir(const std::string &filename,const std::string &destPath);
+    /**
      *  Gets the array of search paths.
      *  
      *  @return The array of search paths.

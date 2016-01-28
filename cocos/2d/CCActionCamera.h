@@ -181,6 +181,7 @@ protected:
 // end of actions group
 /// @}
 
+
 NS_CC_END
 
 #endif //__CCCAMERA_ACTION_H__

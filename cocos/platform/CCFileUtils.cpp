@@ -1000,6 +1000,222 @@ bool FileUtils::isDirectoryExistInternal(const std::string& dirPath) const
 
 }
 
+bool FileUtils::uncompressDir(const std::string &filename,const std::string &destPath)
+{
+    int npos = filename.find_last_of("/");
+    if(npos == std::string::npos)
+    {
+        return false;
+    }
+    //          解压路径  不存在则创建
+    cocos2d::FileUtils::getInstance()->createDirectory(destPath);
+    std::string storePath = destPath;
+    std::string path = filename;
+    
+    unzFile uzf = cocos2d::unzOpen(path.c_str());
+    if(uzf == NULL)
+    {
+        return false;
+    }
+    
+
+    cocos2d::unz_file_info fileInfo;
+    char szFileName[260] = {0};
+    int uzRv = cocos2d::unzGoToFirstFile(uzf);
+    while(uzRv == UNZ_OK)
+    {
+        if(cocos2d::unzGetCurrentFileInfo(uzf,&fileInfo,szFileName,sizeof(szFileName),NULL,0,NULL,0) == UNZ_OK)
+        {
+            if(cocos2d::unzOpenCurrentFile(uzf) != UNZ_OK)
+            {
+                break;
+            }
+            
+            //读压缩包内的文件
+            void* chBuf = (char*)malloc(fileInfo.uncompressed_size + 1);
+            cocos2d::unzReadCurrentFile(uzf, chBuf, fileInfo.uncompressed_size);
+            
+            //            path.clear();
+            //            path.append(cocos2d::FileUtils::getInstance()->getWritablePath());
+            
+            
+            //            path.append(storePath);
+            //            path.append(szFileName);
+            std::string aFilePath = storePath;
+            aFilePath.append(szFileName);
+            
+            //            如果文件名最后一位是/   则新建文件夹
+            if (aFilePath[aFilePath.length()-1] == '/') {
+                cocos2d::FileUtils::getInstance()->createDirectory(aFilePath);
+            }
+            
+            FILE * file = fopen(aFilePath.c_str(),"wb+");
+            if(file)
+            {
+                fwrite(chBuf,1,fileInfo.uncompressed_size,file);
+                fclose(file);
+            }
+            free(chBuf);
+            
+            //关闭压缩包内文件句柄
+            if(cocos2d::unzCloseCurrentFile(uzf) != UNZ_OK)
+            {
+                break;
+            }
+            
+            //枚举压缩包内下一个文件
+            uzRv = cocos2d::unzGoToNextFile(uzf);
+        }
+        else
+        {
+            break;
+        }
+    }
+    
+    return true;
+    
+    //    if (filename == NULL || destPath== NULL)
+    //    {
+    //        CCLOG("source zip is null or dest path is null!");
+    //        return false;
+    //    }
+    //
+    //    // Open the zip file
+    //    std::string outFileName = filename;
+    //    unzFile zipfile = unzOpen(outFileName.c_str());
+    //    if (!zipfile)
+    //    {
+    //        CCLOG("can not open downloaded zip file %s", outFileName.c_str());
+    //        return false;
+    //    }
+    //
+    //    // Get info about the zip file
+    //    unz_global_info global_info;
+    //    if (unzGetGlobalInfo(zipfile, &global_info) != UNZ_OK)
+    //    {
+    //        CCLOG("can not read file global info of %s", outFileName.c_str());
+    //        unzClose(zipfile);
+    //        return false;
+    //    }
+    //
+    //    const int BUFFER_SIZE = 8192;
+    //    const int MAX_FILENAME = 512;
+    //    // Buffer to hold data read from the zip file
+    //    char readBuffer[BUFFER_SIZE];
+    //
+    //    CCLOG("start uncompressing");
+    //
+    //    // Loop to extract all files.
+    //    uLong i;
+    //    for (i = 0; i < global_info.number_entry; ++i)
+    //    {
+    //        // Get info about current file.
+    //        unz_file_info fileInfo;
+    //        char fileName[MAX_FILENAME];
+    //        if (unzGetCurrentFileInfo(zipfile,
+    //                                  &fileInfo,
+    //                                  fileName,
+    //                                  MAX_FILENAME,
+    //                                  NULL,
+    //                                  0,
+    //                                  NULL,
+    //                                  0) != UNZ_OK)
+    //        {
+    //            CCLOG("can not read file info");
+    //            unzClose(zipfile);
+    //            return false;
+    //        }
+    //
+    //        std::string storagePath = destPath;
+    //        std::string fullPath = storagePath + fileName;
+    //
+    //
+    //        // Check if this entry is a directory or a file.
+    //        const size_t filenameLength = strlen(fileName);
+    //        if (fileName[filenameLength - 1] == '/')
+    //        {
+    //            // get all dir
+    //            std::string fileNameStr = std::string(fileName);
+    //            size_t position = 0;
+    //            while ((position = fileNameStr.find_first_of("/", position)) != std::string::npos)
+    //            {
+    //                std::string dirPath = storagePath + fileNameStr.substr(0, position);
+    //                // Entry is a direcotry, so create it.
+    //                // If the directory exists, it will failed scilently.
+    //                //                if (!createDirectory(dirPath.c_str()))
+    //                //                {
+    //                //                    CCLOG("can not create directory %s", dirPath.c_str());
+    //                //unzClose(zipfile);
+    //                //return false;
+    //                //                }
+    //                position++;
+    //            }
+    //        }
+    //        else
+    //        {
+    //            // Entry is a file, so extract it.
+    //
+    //            // Open current file.
+    //            if (unzOpenCurrentFile(zipfile) != UNZ_OK)
+    //            {
+    //                CCLOG("can not open file %s", fileName);
+    //                unzClose(zipfile);
+    //                return false;
+    //            }
+    //
+    //
+    //            // Create a file to store current file.
+    //            FILE *out = fopen(fullPath.c_str(), "wb+");
+    //            if (!out)
+    //            {
+    //                CCLOG("can not open destination file %s", fullPath.c_str());
+    //                unzCloseCurrentFile(zipfile);
+    //                unzClose(zipfile);
+    //                return false;
+    //            }
+    //
+    //            // Write current file content to destinate file.
+    //            int error = UNZ_OK;
+    //            do
+    //            {
+    //                error = unzReadCurrentFile(zipfile, readBuffer, BUFFER_SIZE);
+    //                if (error < 0)
+    //                {
+    //                    CCLOG("can not read zip file %s, error code is %d", fileName, error);
+    //                    unzCloseCurrentFile(zipfile);
+    //                    unzClose(zipfile);
+    //                    return false;
+    //                }
+    //
+    //                if (error > 0)
+    //                {
+    //                    fwrite(readBuffer, error, 1, out);
+    //                }
+    //            } while (error > 0);
+    //            
+    //            fclose(out);
+    //        }
+    //        
+    //        unzCloseCurrentFile(zipfile);
+    //        
+    //        // Goto next entry listed in the zip file.
+    //        if ((i + 1) < global_info.number_entry)
+    //        {
+    //            if (unzGoToNextFile(zipfile) != UNZ_OK)
+    //            {
+    //                CCLOG("can not read next file");
+    //                unzClose(zipfile);
+    //                return false;
+    //            }
+    //        }
+    //    }
+    //    unzClose(zipfile);
+    //    CCLOG("end uncompressing");
+    //    
+    //    return true;
+}
+
+
 bool FileUtils::isDirectoryExist(const std::string& dirPath)
 {
     CCASSERT(!dirPath.empty(), "Invalid path");

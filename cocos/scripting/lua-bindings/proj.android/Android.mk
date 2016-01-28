@@ -135,6 +135,8 @@ LOCAL_SRC_FILES += \
 endif
 LOCAL_SRC_FILES += ../manual/extension/lua_cocos2dx_extension_manual.cpp \
                    ../auto/lua_cocos2dx_extension_auto.cpp \
+                   ../auto/lua_gaf.cpp \
+                   ../auto/lua_gaf_main.cpp \
 
 LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../../external/lua/tolua \
                     $(LOCAL_PATH)/../../../../external/lua/luajit/include \
@@ -147,6 +149,9 @@ LOCAL_C_INCLUDES := $(LOCAL_PATH)/../../../../external/lua/tolua \
                     $(LOCAL_PATH)/../../../editor-support/spine \
                     $(LOCAL_PATH)/../../../ui \
                     $(LOCAL_PATH)/../../../../extensions \
+                    $(LOCAL_PATH)/../../../../extensions/GUI/CCControlExtension \
+                    $(LOCAL_PATH)/../../../../extensions/GUI/CCControlExtension/RepeatNode \
+                    $(LOCAL_PATH)/../../../../extensions/gaf \
                     $(LOCAL_PATH)/../auto \
                     $(LOCAL_PATH)/../manual \
                     $(LOCAL_PATH)/../manual/cocos2d \
@@ -184,6 +189,9 @@ LOCAL_EXPORT_C_INCLUDES := $(LOCAL_PATH)/../../../../external/lua/tolua \
 LOCAL_WHOLE_STATIC_LIBRARIES := cocos2d_lua_android_static
 
 LOCAL_STATIC_LIBRARIES := cocos2dx_static
+LOCAL_STATIC_LIBRARIES += cocos2dx_internal_static
+LOCAL_STATIC_LIBRARIES += cocosbuilder_static
+LOCAL_STATIC_LIBRARIES += cocos_extension_static
 
 include $(BUILD_STATIC_LIBRARY)
 

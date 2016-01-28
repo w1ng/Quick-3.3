@@ -28,6 +28,11 @@ CCNodeLoaderLibrary.cpp \
 CCParticleSystemQuadLoader.cpp \
 CCScale9SpriteLoader.cpp \
 CCScrollViewLoader.cpp \
+CCControlButtonBMFontLoader.cpp \
+CCControlButtonLoader.cpp \
+CCRepeat9SpriteLoader.cpp \
+CCLabelTTFLoader.cpp \
+TTFConfigLoader.cpp \
 CCSpriteLoader.cpp
 endif
 

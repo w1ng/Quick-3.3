@@ -6,6 +6,8 @@ LOCAL_MODULE    := cocos_extension_static
 LOCAL_MODULE_FILENAME := libextension
 
 LOCAL_SRC_FILES := \
+GUI/CCControlExtension/RepeatNode/Repeat9Sprite.cpp \
+GUI/CCControlExtension/RepeatNode/RepeatNode.cpp \
 GUI/CCControlExtension/CCControl.cpp \
 GUI/CCControlExtension/CCControlButton.cpp \
 GUI/CCControlExtension/CCControlColourPicker.cpp \
@@ -20,6 +22,44 @@ GUI/CCControlExtension/CCInvocation.cpp \
 GUI/CCScrollView/CCScrollView.cpp \
 GUI/CCScrollView/CCTableView.cpp \
 GUI/CCScrollView/CCTableViewCell.cpp \
+gaf/GAFAnimationFrame.cpp \
+gaf/GAFAnimationSequence.cpp \
+gaf/GAFAsset.cpp \
+gaf/GAFAssetTextureManager.cpp \
+gaf/GAFCachedTexture.cpp \
+gaf/GAFFile.cpp \
+gaf/GAFFilterData.cpp \
+gaf/GAFFilterManager.cpp \
+gaf/GAFLoader.cpp \
+gaf/GAFMask.cpp \
+gaf/GAFMovieClip.cpp \
+gaf/GAFObject.cpp \
+gaf/GAFPrecompiled.cpp \
+gaf/GAFQuadCommand.cpp \
+gaf/GAFShaderManager.cpp \
+gaf/GAFSoundInfo.cpp \
+gaf/GAFSprite.cpp \
+gaf/GAFStream.cpp \
+gaf/GAFSubobjectState.cpp \
+gaf/GAFTextData.cpp \
+gaf/GAFTextField.cpp \
+gaf/GAFTextureAtlas.cpp \
+gaf/GAFTextureAtlasElement.cpp \
+gaf/GAFTimeline.cpp \
+gaf/GAFTimelineAction.cpp \
+gaf/PrimitiveDeserializer.cpp \
+gaf/TagDefineAnimationFrames.cpp \
+gaf/TagDefineAnimationFrames2.cpp \
+gaf/TagDefineAnimationMasks.cpp \
+gaf/TagDefineAnimationObjects.cpp \
+gaf/TagDefineAtlas.cpp \
+gaf/TagDefineAtlas3.cpp \
+gaf/TagDefineNamedParts.cpp \
+gaf/TagDefineSequences.cpp \
+gaf/TagDefineSounds.cpp \
+gaf/TagDefineStage.cpp \
+gaf/TagDefineTextField.cpp \
+gaf/TagDefineTimeline.cpp \
 physics-nodes/CCPhysicsDebugNode.cpp \
 physics-nodes/CCPhysicsSprite.cpp
 

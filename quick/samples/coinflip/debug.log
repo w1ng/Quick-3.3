@@ -4,7 +4,7 @@
 	cocos2d.x.version: quick-cocos2d-x 3.3
 	gl.vendor: NVIDIA Corporation
 	gl.supports_PVRTC: false
-	gl.renderer: NVIDIA GeForce GT 750M OpenGL Engine
+	gl.renderer: NVIDIA GeForce GT 640M OpenGL Engine
 	cocos2d.x.compiled_with_profiler: false
 	gl.max_texture_size: 16384
 	gl.supports_ETC1: false
@@ -13,7 +13,7 @@
 	gl.supports_discard_framebuffer: false
 	gl.supports_NPOT: true
 	gl.supports_S3TC: true
-	gl.version: 2.1 NVIDIA-10.2.7 310.41.25f01
+	gl.version: 2.1 NVIDIA-10.4.2 310.41.35f01
 	gl.supports_ATITC: false
 	gl.max_texture_units: 16
 	cocos2d.x.compiled_with_gl_state_cache: true
@@ -22,7 +22,7 @@
 
 Quick-Cocos2d-x C++ support ready.
 ------------------------------------------------
-LOAD LUA FILE: /Users/Wubing/Documents/quick-3.3/quick/samples/coinflip/src/main.lua
+LOAD LUA FILE: /Users/stan/Documents/Quick-3.3/quick/samples/coinflip/src/main.lua
 ------------------------------------------------
 [LUA-print] ===========================================================
 [LUA-print]               LOAD QUICK FRAMEWORK
@@ -33,7 +33,7 @@ LOAD LUA FILE: /Users/Wubing/Documents/quick-3.3/quick/samples/coinflip/src/main
 [LUA-print] [INFO] # device.platform              = mac
 [LUA-print] [INFO] # device.model                 = unknown
 [LUA-print] [INFO] # device.language              = cn
-[LUA-print] [INFO] # device.writablePath          = /Users/Wubing/Documents/quick-3.3/quick/samples/coinflip/
+[LUA-print] [INFO] # device.writablePath          = /Users/stan/Documents/Quick-3.3/quick/samples/coinflip/
 [LUA-print] [INFO] # device.directorySeparator    = /
 [LUA-print] [INFO] # device.pathSeparator         = :
 [LUA-print] [INFO] #

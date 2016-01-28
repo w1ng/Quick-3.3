@@ -223,6 +223,8 @@ void createSimulator(const char* viewName, float width, float height,bool isLand
 
 - (void) createWindowAndGLView
 {
+//    GLContextAttrs glContextAttrs = {8, 8, 8, 8, 24, 8};
+//    Wubing change
     GLContextAttrs glContextAttrs = {8, 8, 8, 8, 24, 8};
     GLView::setGLContextAttrs(glContextAttrs);
     

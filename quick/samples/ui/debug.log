@@ -4,7 +4,7 @@
 	cocos2d.x.version: quick-cocos2d-x 3.3
 	gl.vendor: NVIDIA Corporation
 	gl.supports_PVRTC: false
-	gl.renderer: NVIDIA GeForce GT 650M OpenGL Engine
+	gl.renderer: NVIDIA GeForce GT 640M OpenGL Engine
 	cocos2d.x.compiled_with_profiler: false
 	gl.max_texture_size: 16384
 	gl.supports_ETC1: false
@@ -22,7 +22,7 @@
 
 Quick-Cocos2d-x C++ support ready.
 ------------------------------------------------
-LOAD LUA FILE: /Users/Debao/Documents/quick-3.3/quick/samples/ui/src/main.lua
+LOAD LUA FILE: /Users/stan/Documents/Quick-3.3/quick/samples/ui/src/main.lua
 ------------------------------------------------
 [LUA-print] ===========================================================
 [LUA-print]               LOAD QUICK FRAMEWORK
@@ -33,7 +33,7 @@ LOAD LUA FILE: /Users/Debao/Documents/quick-3.3/quick/samples/ui/src/main.lua
 [LUA-print] [INFO] # device.platform              = mac
 [LUA-print] [INFO] # device.model                 = unknown
 [LUA-print] [INFO] # device.language              = cn
-[LUA-print] [INFO] # device.writablePath          = /Users/Debao/Documents/quick-3.3/quick/samples/ui/
+[LUA-print] [INFO] # device.writablePath          = /Users/stan/Documents/Quick-3.3/quick/samples/ui/
 [LUA-print] [INFO] # device.directorySeparator    = /
 [LUA-print] [INFO] # device.pathSeparator         = :
 [LUA-print] [INFO] #
@@ -57,16 +57,3 @@ libpng warning: iCCP: known incorrect sRGB profile
 [LUA-print] [INFO] # display.c_top                = 320.00
 [LUA-print] [INFO] # display.c_bottom             = -320.00
 [LUA-print] [INFO] #
-[LUA-print] Option 4 selected, Option 0 unselected
-[LUA-print] Option 3 selected, Option 4 unselected
-[LUA-print] Option 2 selected, Option 3 unselected
-[LUA-print] Option 1 selected, Option 2 unselected
-[LUA-print] Option 2 selected, Option 1 unselected
-[LUA-print] Option 3 selected, Option 2 unselected
-[LUA-print] Option 2 selected, Option 3 unselected
-[LUA-print] Option 1 selected, Option 2 unselected
-[LUA-print] Option 2 selected, Option 1 unselected
-[LUA-print] Option 1 selected, Option 2 unselected
-[LUA-print] Option 2 selected, Option 1 unselected
-[LUA-print] Option 1 selected, Option 2 unselected
-[LUA-print] Option 2 selected, Option 1 unselected
